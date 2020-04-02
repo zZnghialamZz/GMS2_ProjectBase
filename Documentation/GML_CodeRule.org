@@ -1,0 +1,88 @@
+#+AUTHOR: Nghia Lam
+#+TITLE: Coding Convention - GML
+
+* Table of Contents                                                     :toc:
+- [[#what-is-coding-convention][What is "Coding Convention"?]]
+- [[#rules][Rules]]
+  - [[#naming-convention][Naming Convention]]
+
+* What is "Coding Convention"?
+
+* Rules
+** Naming Convention
+Something you’ll be doing a lot in game development is giving things names.  Naming objects, sprites, sound effects, and variables.
+You should always name things carefully and try to keep these two things in mind:
+
+- What is this thing we are naming?
+- What does it do?
+
+First, some basics rules.
+
+1. Don’t use spaces.  If you want spaces, use an underscore character: *“_”*
+2. In fact, don’t use anything but letters, numbers, and underscores.
+3. But don’t start your names with a number.
+4. Spell things correctly and completely.
+5. Names are always case sensitive!  Be careful and consistent with casing.
+
+*** Resources
+The basic rule is to use a 2-3 letter “code” to represent each resource.  This makes it very easy to find those resources using the code auto-complete feature later.
+Beyond that, and the basic rules listed above, you can name the sprites anything you want!
+
+- Sprites (=spr_=)
+- Sounds (=sfx_= for sound effects and =bgm_= for background music)
+- Backgrounds (=bg_=)
+- Path (=pth_=)
+- Shaders (=shd_=)
+- Fonts (=fnt_=)
+- Timelines (=tml_=)
+- Objects (=obj_=)
+- Rooms (=rm_=)
+
+*** Script
+We’ll name them for what they do, and that’s it.
+Some examples that are built into game maker:
+
+#+begin_example
+  draw_text()
+  sprite_get_width()
+  show_message()
+  point_distance()
+#+end_example
+
+*** Variables
+Finally, let’s talk about naming variables.  There are several different types variables in Game Maker.
+Again, we will take our queues from Game Maker’s built in variables.  Let’s look at some of them.
+
+#+begin_example
+  x
+  y
+  sprite_index
+  timeline_index
+#+end_example
+
+All variables in game maker use this convention… but that can get a little confusing when you start using variables of different scopes.
+Without getting TOO into it, there are 3 different types of variables in GameMaker.  Global Variables, Object Variables, and Script Variables.
+Global variables can be used anywhere, Object variables can be used anywhere from within that object, and Script variables can be used only within the block of code it was defined.
+Again, more on that later, but here’s the convention I use.
+
+- =Global Variables= : Camel Cased, no spaces or underscores.
+#+begin_example
+  GameState
+  BGMVolume
+  Score
+  CurrentBossHP
+#+end_example
+
+- =Object Variables= : lower cased, underscores between words
+#+begin_example
+  max_speed
+  jump_power
+  reload_time
+#+end_example
+
+- =Script Variables= : starts with an underscore, lower cased, underscores between words, often abreviated
+#+begin_example
+  _x
+  _pos
+  _inst
+#+end_example
