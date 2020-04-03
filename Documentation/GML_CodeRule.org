@@ -24,19 +24,34 @@ First, some basics rules.
 4. Spell things correctly and completely.
 5. Names are always case sensitive!  Be careful and consistent with casing.
 
+*** Macro
+Macro represent for unique constant, which cannot be changed any more during game runtime.
+I decided to name them all upper case sensitive for a more easy recognization between normal variables and a macro.
+
+#+begin_example
+  RES_W
+  RES_H
+  SAVEFILE
+#+end_example
+
+*** Enum
+Just like macro, =enum= is a unique way to setup variables, or global variables to be more specific.
+
 *** Resources
 The basic rule is to use a 2-3 letter “code” to represent each resource.  This makes it very easy to find those resources using the code auto-complete feature later.
 Beyond that, and the basic rules listed above, you can name the sprites anything you want!
 
+- Backgrounds (=bg_=)
+- Fonts (=fnt_=)
+- Layers (=lyr_=)
+- Tiles (=tls_=)
+- Objects (=obj_=)
+- Path (=pth_=)
+- Rooms (=rm_=)
 - Sprites (=spr_=)
 - Sounds (=sfx_= for sound effects and =bgm_= for background music)
-- Backgrounds (=bg_=)
-- Path (=pth_=)
 - Shaders (=shd_=)
-- Fonts (=fnt_=)
 - Timelines (=tml_=)
-- Objects (=obj_=)
-- Rooms (=rm_=)
 
 *** Script
 We’ll name them for what they do, and that’s it.

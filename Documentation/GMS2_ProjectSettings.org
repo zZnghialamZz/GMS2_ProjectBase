@@ -1,0 +1,15 @@
+#+AUTHOR: Nghia Lam
+#+TITLE: GMS2 Project Settings
+
+* About
+
+* Table of Contents                                                     :toc:
+- [[#about][About]]
+- [[#general-information][General Information]]
+  - [[#project-info][Project Info]]
+
+* General Information
+** Project Info
+This project base is aimed to build a 2D platformer using GameMaker Stuio 2:
+- Current Version: 0.0.1
+-
