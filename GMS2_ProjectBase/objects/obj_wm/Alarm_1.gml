@@ -19,6 +19,7 @@
 /* ********************************************************************* */
 
 /// @description	Resize Window and Application Surface when it is not fullscreen
+
 surface_resize(application_surface, cur_w * subpx_scale, cur_h * subpx_scale);
 display_set_gui_size(cur_w * gui_scale, cur_h * gui_scale);
 

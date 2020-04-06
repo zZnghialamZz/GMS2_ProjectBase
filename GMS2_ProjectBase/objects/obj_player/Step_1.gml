@@ -20,6 +20,8 @@
 
 /// @description	Calculate input and check state
 
+if (global.pause) exit; // Skip this step when game pause
+
 /*	--------------------------------------------------------------------
 	PLATFORMER CODE
 	--------------------------------------------------------------------
@@ -27,13 +29,14 @@
 
 #region Get Input (Platformer)
 // X
-dir = obj_controller.key_right - obj_controller.key_left;
+dir = global.gcontroller.key_right - global.gcontroller.key_left;
 dx += (dir * walk_spd);
 // Y
 if (global.has_grv) { dy += mGravity; }
-if (onland) && (obj_controller.key_jump) { dy -= jump_h; }
+if (onland) && (global.gcontroller.key_jump) { dy -= jump_h; }
 
 #endregion
+
 
 
 
@@ -41,11 +44,12 @@ if (onland) && (obj_controller.key_jump) { dy -= jump_h; }
 	TOP DOWN RPG CODE
 	--------------------------------------------------------------------
 */
+
 //#region Get Input
 //// X
-//var hdir = obj_controller.key_right - obj_controller.key_left;
+//var hdir = global.gcontroller.key_right - global.gcontroller.key_left;
 //dx = (hdir * walk_spd);
 //// Y
-//var vdir = obj_controller.key_down - obj_controller.key_up;
+//var vdir = global.gcontroller.key_down - global.gcontroller.key_up;
 //dy = (vdir * walk_spd);
 //#endregion

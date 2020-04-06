@@ -30,13 +30,6 @@ enum eASPECT
 }
 #endregion
 
-
-// General Settings
-#macro mResW	320
-#macro mResH	180
-#macro mCenterWindow alarm[0] = 1 // Call Alarm0 after 1 frame
-#macro mResizeWindow alarm[1] = 1 // Call Alarm1 after 1 frame
-
 global.fullscreen	= false;
 
 cur_w = mResW;

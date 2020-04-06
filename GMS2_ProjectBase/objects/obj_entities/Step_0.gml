@@ -20,6 +20,8 @@
 
 /// @description	Movement statistic management
 
+if (global.pause) exit;
+
 /*	--------------------------------------------------------------------
 	PLATFORMER CODE
 	--------------------------------------------------------------------
@@ -61,6 +63,7 @@ else onland = false;
 	TOP DOWN RPG CODE
 	--------------------------------------------------------------------
 */
+
 //#region Update Stats
 //// X
 //_x = dx;

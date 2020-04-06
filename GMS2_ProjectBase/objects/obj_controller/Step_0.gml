@@ -32,6 +32,7 @@ if use_gamepad
 	key_down	= max(gamepad_axis_value(0, gp_axislv), 0);
 	key_jump	= gamepad_button_check(0, gp_face1);
 	key_action	= gamepad_button_check(0, gp_shoulderr);
+	key_pause	= gamepad_button_check(0, gp_select);
 }
 else
 {
@@ -39,6 +40,7 @@ else
 	key_right	= keyboard_check(vk_right);
 	key_up		= keyboard_check(vk_up);
 	key_down	= keyboard_check(vk_down);
-	key_jump	= keyboard_check(vk_space);
-	key_action	= keyboard_check(vk_enter);
+	key_jump	= keyboard_check_pressed(vk_space);
+	key_action	= keyboard_check_pressed(vk_enter);
+	key_pause	= keyboard_check_pressed(vk_escape);
 }

@@ -20,11 +20,19 @@
 
 /// @description	Init Controller Variables
 
+enum eCONTROLLER
+{
+	keyboard,
+	gamepad
+}
+
 key_left	= 0;
 key_right	= 0;
 key_up		= 0;
 key_down	= 0;
 key_jump	= 0;
 key_action	= 0;
+key_pause	= 0;
 
 use_gamepad	= false;
+current_use = eCONTROLLER.keyboard;

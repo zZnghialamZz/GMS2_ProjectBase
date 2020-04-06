@@ -28,6 +28,11 @@ global.sound		= true;
 global.has_grv		= true; // Platformer only
 #endregion
 
-// Gameplay Stats
-#macro mGravity		0.3
-#macro mFrict		0.76
+#region Init Managers
+global.gwm			= instance_create_layer(0, 0, layer, obj_wm);
+global.gcam			= instance_create_layer(0, 0, layer, obj_camera);
+global.gcontroller	= instance_create_layer(0, 0, layer, obj_controller);
+global.audio		= instance_create_layer(0, 0, layer, obj_audio);
+
+global.guim			= instance_create_layer(0, 0, layer_get_id("lyr_ui"), obj_uim);
+#endregion
