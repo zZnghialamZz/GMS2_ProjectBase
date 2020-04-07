@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "39d2f1ee-64df-417a-8d00-64fd89eb8ed7",
+            "Value": {
+                "id": "e57ef232-f864-4db6-b0fe-61ab72410676",
+                "resourcePath": "shaders\/shd_white\/shd_white.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "39f57e97-5261-4437-b051-6b5af88c5dc9",
             "Value": {
                 "id": "3b98b03b-e351-49df-ad09-2334e15d45f7",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "f83e7b24-f4ef-4000-b71d-4937a16e18a7",
+            "Value": {
+                "id": "cacb0cc0-945c-4ee7-9c36-33abf9791c80",
+                "resourcePath": "scripts\/win_set_aspect\/win_set_aspect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f921be35-66ca-485f-8177-7391024ded8b",
             "Value": {
                 "id": "aa5e5fcd-2fcf-46c6-a451-8a4c64943b56",
@@ -500,6 +516,7 @@
         "d83eea23-34f7-45ca-97b7-de1fcb10beaa",
         "cd7aa254-58ab-4324-a2ea-655351f2a6d2",
         "fa1b38da-5ef3-4482-a06c-5281683d9be7",
+        "f83e7b24-f4ef-4000-b71d-4937a16e18a7",
         "7e4db76e-8e5b-496a-afd8-ed1dea3cb1d7",
         "82507074-d0c0-4180-99a7-96863dec542b",
         "386910bd-e0fa-4439-b63c-2a11ecb15be3",

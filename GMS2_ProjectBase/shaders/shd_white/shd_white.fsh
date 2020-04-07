@@ -18,13 +18,14 @@
 
 /* ********************************************************************* */
 
-/// @description	Resize Window and Application Surface when it is not fullscreen
+/// @description	Simple passthrough fragment shader
+///					Drawing white texture on the sprite
 
-surface_resize(application_surface, cur_w * subpx_scale, cur_h * subpx_scale);
-//display_set_gui_size(cur_w * gui_scale, cur_h * gui_scale);
+varying vec2 v_vTexcoord;
+varying vec4 v_vColour;
 
-if (!window_get_fullscreen())
+void main()
 {
-	window_set_size(cur_w * win_scale, cur_h * win_scale);
-	mCenterWindow;
+    gl_FragColor = v_vColour * texture2D(gm_BaseTexture, v_vTexcoord);
+	gl_FragColor = vec4(1.0, 1.0, 1.0, gl_FragColor.a);
 }

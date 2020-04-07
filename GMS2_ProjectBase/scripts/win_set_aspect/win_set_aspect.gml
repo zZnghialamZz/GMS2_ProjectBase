@@ -18,13 +18,40 @@
 
 /* ********************************************************************* */
 
-/// @description	Resize Window and Application Surface when it is not fullscreen
+/// @function     win_set_aspect(eASPECT) 
+/// @description  Setting the aspect ratio
+/// @argument     eASPECT
 
-surface_resize(application_surface, cur_w * subpx_scale, cur_h * subpx_scale);
-//display_set_gui_size(cur_w * gui_scale, cur_h * gui_scale);
-
-if (!window_get_fullscreen())
+with (global.gwm)
 {
-	window_set_size(cur_w * win_scale, cur_h * win_scale);
-	mCenterWindow;
+	switch (argument[0])
+	{
+		case eASPECT._16x9:
+		{
+			cur_h = mResH;
+			cur_w = mResH * (16 / 9);
+			break;
+		}
+		case eASPECT._21x9:
+		{
+			cur_h = mResH;
+			cur_w = mResH * (21 / 9);
+			break;
+		}
+		case eASPECT._4x3:
+		{
+			cur_h = mResH;
+			cur_w = mResH * (4 / 3);
+			break;
+		}
+		case eASPECT._1x1:
+		{
+			cur_h = mResH;
+			cur_w = mResH;
+			break;
+		}
+	}
+	
+	mResizeWindow;
+	win_transition(eGAME.transition, 10);
 }

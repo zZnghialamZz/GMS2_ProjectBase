@@ -18,14 +18,16 @@
 
 /* ********************************************************************* */
 
-/// @function     win_transition(eGAME, target) 
+/// @function     win_transition(eGAME, frames, target) 
 /// @description  Use for window transition
 /// @argument     eGAME
+/// @argument     frames {optional}
 /// @argument     target {optional}
 
 /* Script body goes here */
 with (instance_create_depth(0,0, -1000, obj_wtrans))
 {
 	global.gstate = argument[0];
-	if (argument_count > 1) target = argument[1];
+	if (argument_count > 1) timer = argument[1];
+	if (argument_count > 2) target = argument[2];
 }
