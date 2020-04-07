@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "284f427e-0e36-4af4-a922-f05b1fa308ef",
+            "Value": {
+                "id": "20d53585-8bdc-459e-b6ec-37725612b54d",
+                "resourcePath": "notes\/LICENSE.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "3319d85b-659d-4ab3-a226-15c6468c330a",
             "Value": {
                 "id": "eeb6bd2a-6805-452f-8528-b0f2c803d3af",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "bc9ceada-32cf-4617-8ca6-dd5c64cb078b",
+            "Value": {
+                "id": "ac4433c8-2a89-4b39-b7de-077d19ad849e",
+                "resourcePath": "objects\/obj_wtrans\/obj_wtrans.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bd93db5a-11c8-40e0-ad8d-012f45768784",
             "Value": {
                 "id": "1641122e-c2d1-4726-9891-d8911726e76b",
@@ -463,6 +479,14 @@
             }
         },
         {
+            "Key": "fa1b38da-5ef3-4482-a06c-5281683d9be7",
+            "Value": {
+                "id": "f7392b21-dbf1-435e-8b90-7a04de515d01",
+                "resourcePath": "scripts\/win_transition\/win_transition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fe3bc07d-979f-4b3a-b986-803957c031da",
             "Value": {
                 "id": "eeff64c4-7635-4581-bdcf-c431eb1ee8e5",
@@ -475,6 +499,7 @@
         "7314fafd-e5bd-4484-ae50-badae3b7cd03",
         "d83eea23-34f7-45ca-97b7-de1fcb10beaa",
         "cd7aa254-58ab-4324-a2ea-655351f2a6d2",
+        "fa1b38da-5ef3-4482-a06c-5281683d9be7",
         "7e4db76e-8e5b-496a-afd8-ed1dea3cb1d7",
         "82507074-d0c0-4180-99a7-96863dec542b",
         "386910bd-e0fa-4439-b63c-2a11ecb15be3",

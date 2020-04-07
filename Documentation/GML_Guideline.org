@@ -1,0 +1,18 @@
+#+AUTHOR: Nghia Lam
+#+TITLE: Introduction to Programming with GML
+
+* About
+This Document is aim for a quick peek at GML code definition and usages.
+
+* Table of Contents                                                     :toc:
+- [[#about][About]]
+- [[#code-definition-and-usage][Code Definition and Usage]]
+  - [[#built-in][Built-in]]
+
+* Code Definition and Usage
+** Built-in
+*** Camera
+*** GUI
+*** Object
+*** Sprite
+*** View

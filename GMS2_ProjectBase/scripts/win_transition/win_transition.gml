@@ -18,38 +18,14 @@
 
 /* ********************************************************************* */
 
-/// @description	Init Game Values
+/// @function     win_transition(eGAME, target) 
+/// @description  Use for window transition
+/// @argument     eGAME
+/// @argument     target {optional}
 
-#region Global Variables
-enum eGAME
+/* Script body goes here */
+with (instance_create_depth(0,0, -1000, obj_wtrans))
 {
-	run,
-	next,
-	goto,
-	pause,
-	restart,
-	quit,
-	transition
+	global.gstate = argument[0];
+	if (argument_count > 1) target = argument[1];
 }
-
-global.pause		= false;
-global.quit			= false;
-global.sound		= true;
-
-global.has_grv		= true; // Platformer only
-#endregion
-
-#region Init Managers
-global.gstate		= eGAME.transition; // Transition Fade at start screen.
-
-global.gwm			= instance_create_layer(0, 0, layer, obj_wm);
-global.gcam			= instance_create_layer(0, 0, layer, obj_camera);
-global.gcontroller	= instance_create_layer(0, 0, layer, obj_controller);
-global.audio		= instance_create_layer(0, 0, layer, obj_audio);
-
-global.guim			= instance_create_layer(0, 0, layer_get_id("lyr_ui"), obj_uim);
-#endregion
-
-
-// Fade Screen At Startup
-win_transition(eGAME.transition);

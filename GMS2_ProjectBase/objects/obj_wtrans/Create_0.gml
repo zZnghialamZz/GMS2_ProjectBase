@@ -18,38 +18,24 @@
 
 /* ********************************************************************* */
 
-/// @description	Init Game Values
+/// @description	Values Definition  
 
-#region Global Variables
-enum eGAME
+#region Enum Define
+enum eTRANSTYPE
 {
-	run,
-	next,
-	goto,
-	pause,
-	restart,
-	quit,
-	transition
+	fade,
+	close_in
 }
-
-global.pause		= false;
-global.quit			= false;
-global.sound		= true;
-
-global.has_grv		= true; // Platformer only
 #endregion
 
-#region Init Managers
-global.gstate		= eGAME.transition; // Transition Fade at start screen.
+is_done = false;
+percent = 1;
+timer = 60;
 
-global.gwm			= instance_create_layer(0, 0, layer, obj_wm);
-global.gcam			= instance_create_layer(0, 0, layer, obj_camera);
-global.gcontroller	= instance_create_layer(0, 0, layer, obj_controller);
-global.audio		= instance_create_layer(0, 0, layer, obj_audio);
+w = display_get_gui_width();
+h = display_get_gui_height();
+h_half = h / 2;
 
-global.guim			= instance_create_layer(0, 0, layer_get_id("lyr_ui"), obj_uim);
-#endregion
+target = room;
+type = eTRANSTYPE.fade;	// Using fade option as default.
 
-
-// Fade Screen At Startup
-win_transition(eGAME.transition);
